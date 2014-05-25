@@ -12,12 +12,26 @@
  */
 return [
     'dragonjsonserveri18n' => [
-        'languages' => [],
-        'fallback' => '',
+        'languages' => [
+            'de' => 'Deutsch',
+            'en' => 'English',
+        ],
+    ],
+    'dragonjsonserver' => [
+        'apiclasses' => [
+            '\DragonJsonServerI18n\Api\I18n' => 'I18n',
+        ],
     ],
 	'service_manager' => [
+        'aliases' => array(
+            'translator' => 'MvcTranslator',
+        ),
 		'invokables' => [
             '\DragonJsonServerI18n\Service\I18n' => '\DragonJsonServerI18n\Service\I18n',
 		],
 	],
+    'translator' => [
+        'locale' => [null, 'en'],
+        'translation_file_patterns' => [],
+    ],
 ];

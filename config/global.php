@@ -12,7 +12,9 @@
  */
 return [
     'dragonjsonserveri18n' => [
-        'languages' => ['%language%', '%language%'],
-        'fallback' => '%language%',
+        'languages' => [
+            '%languagekey%' => '%languagename%',
+            '%languagekey%' => '%languagename%',
+        ],
     ],
 ];

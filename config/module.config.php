@@ -26,9 +26,6 @@ return [
         'aliases' => array(
             'translator' => 'MvcTranslator',
         ),
-		'invokables' => [
-            '\DragonJsonServerI18n\Service\I18n' => '\DragonJsonServerI18n\Service\I18n',
-		],
 	],
     'translator' => [
         'locale' => [null, 'en'],

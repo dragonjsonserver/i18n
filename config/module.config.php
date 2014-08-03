@@ -22,11 +22,11 @@ return [
             '\DragonJsonServerI18n\Api\I18n' => 'I18n',
         ],
     ],
-	'service_manager' => [
+    'service_manager' => [
         'aliases' => array(
             'translator' => 'MvcTranslator',
         ),
-	],
+    ],
     'translator' => [
         'locale' => [null, 'en'],
         'translation_file_patterns' => [],
